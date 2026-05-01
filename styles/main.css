@@ -244,6 +244,11 @@ body {
   background-attachment: fixed;
   color: #ffffff;
 }
+@media (hover: none) and (pointer: coarse), (max-width: 1024px) {
+  .hero {
+    background-attachment: scroll;
+  }
+}
 .hero .hero-content {
   max-width: 800px;
 }
