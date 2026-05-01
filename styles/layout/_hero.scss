@@ -12,7 +12,11 @@
   background-attachment: fixed;
   color: $color-white;
 
-  @media (hover: none) and (pointer: coarse), (max-width: 1024px) {
+  @supports (-webkit-touch-callout: none) {
+    background-attachment: scroll;
+  }
+  
+  @media (max-width: 1024px) {
     background-attachment: scroll;
   }
 
