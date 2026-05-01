@@ -1,0 +1,93 @@
+@use '../base/variables' as *;
+
+.about {
+  background-color: $color-white;
+
+  .about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .about-content {
+    .section-header {
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+
+    .about-text {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: $color-text;
+      margin-bottom: 2.5rem;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+
+      .feature-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        i {
+          color: $color-accent;
+          font-size: 1.5rem;
+        }
+
+        span {
+          font-weight: 600;
+          color: $color-primary;
+        }
+      }
+    }
+  }
+
+  .about-image {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: $box-shadow-hover;
+
+    img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+
+    .experience-badge {
+      position: absolute;
+      bottom: -20px;
+      right: 30px;
+      background-color: $color-accent;
+      color: $color-white;
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: $box-shadow-dark;
+
+      .years {
+        display: block;
+        font-family: $font-heading;
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: 1;
+      }
+
+      .text {
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}

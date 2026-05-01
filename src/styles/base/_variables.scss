@@ -1,0 +1,22 @@
+// Colors
+$color-primary: #121212;
+$color-secondary: #1a1a1a;
+$color-accent: #c49f5d; // Gold
+$color-white: #ffffff;
+$color-light-gray: #f9f9f9;
+$color-text: #4a4a4a;
+$color-text-light: #e0e0e0;
+
+// Typography
+$font-heading: 'Outfit', sans-serif;
+$font-body: 'Inter', sans-serif;
+
+// Layout
+$max-width: 1200px;
+$padding-section: 5rem 0;
+
+// Transitions & Shadows
+$transition-fast: 0.3s ease;
+$transition-slow: 0.5s ease;
+$box-shadow-hover: 0px 15px 30px rgba(0, 0, 0, 0.1);
+$box-shadow-dark: 0px 10px 30px rgba(0, 0, 0, 0.5);

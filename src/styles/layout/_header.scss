@@ -1,0 +1,140 @@
+@use '../base/variables' as *;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 0;
+  z-index: 1000;
+  background-color: transparent;
+  transition: $transition-fast;
+
+  &.scrolled {
+    background-color: $color-primary;
+    box-shadow: $box-shadow-hover;
+    padding: 1rem 0;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: $color-white;
+    font-family: $font-heading;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: $transition-fast;
+
+    &:hover {
+      transform: scale(1.02);
+
+      .logo-icon {
+        color: $color-white;
+      }
+    }
+
+    .logo-text {
+      font-weight: 400;
+    }
+
+    .logo-highlight {
+      font-weight: 800;
+      color: $color-accent;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 1.2rem;
+    }
+  }
+
+  .nav-menu {
+    display: flex;
+    gap: 2rem;
+
+    @media (max-width: 768px) {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      height: 100vh;
+      width: 75%;
+      background-color: $color-primary;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: $transition-fast;
+      box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+
+      &.active {
+        right: 0;
+      }
+    }
+
+    .nav-link {
+      color: $color-white;
+      font-weight: 500;
+      position: relative;
+      padding-bottom: 0.2rem;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: $color-accent;
+        transition: $transition-fast;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1001;
+
+    span {
+      width: 30px;
+      height: 3px;
+      background-color: $color-white;
+      transition: $transition-fast;
+    }
+
+    @media (max-width: 768px) {
+      display: flex;
+    }
+
+    &.active {
+      span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+
+      span:nth-child(2) {
+        opacity: 0;
+      }
+
+      span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+    }
+  }
+}

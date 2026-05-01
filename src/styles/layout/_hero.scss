@@ -1,0 +1,50 @@
+@use '../base/variables' as *;
+
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0.7)), url('../assets/images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: $color-white;
+
+  .hero-content {
+    max-width: 800px;
+    
+    .hero-title {
+      font-family: $font-heading;
+      font-size: 4rem;
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+      
+      span {
+        color: $color-accent;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 2.5rem;
+      }
+    }
+    
+    .hero-subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 2.5rem;
+      font-weight: 300;
+      max-width: 600px;
+    }
+    
+    .hero-buttons {
+      display: flex;
+      gap: 1.5rem;
+      
+      @media (max-width: 500px) {
+        flex-direction: column;
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+@use 'variables' as *;
+
+body {
+  font-family: $font-body;
+  color: $color-text;
+  background-color: $color-light-gray;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section-padding {
+  padding: $padding-section;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+
+  .subtitle {
+    color: $color-accent;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .title {
+    font-family: $font-heading;
+    font-size: 2.5rem;
+    color: $color-primary;
+    font-weight: 700;
+    
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: $color-accent;
+  color: $color-white;
+  font-family: $font-heading;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: $transition-fast;
+  border-radius: 4px;
+  
+  &:hover {
+    background-color: mix(#000, $color-accent, 15%);
+  }
+  
+  &--outline {
+    background-color: transparent;
+    border: 2px solid $color-white;
+    color: $color-white;
+    
+    &:hover {
+      background-color: $color-white;
+      color: $color-primary;
+    }
+  }
+}
+
+/* Animations */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  
+  &.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,50 @@
+@use '../base/variables' as *;
+
+.services {
+  background-color: $color-white;
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .service-card {
+    background-color: $color-light-gray;
+    padding: 2.5rem 2rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: $transition-slow;
+    border-bottom: 3px solid transparent;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: $box-shadow-hover;
+      border-bottom-color: $color-accent;
+      
+      .service-icon {
+        color: $color-accent;
+        transform: scale(1.1);
+      }
+    }
+
+    .service-icon {
+      font-size: 3rem;
+      color: $color-primary;
+      margin-bottom: 1.5rem;
+      transition: $transition-fast;
+    }
+
+    .service-title {
+      font-family: $font-heading;
+      font-size: 1.3rem;
+      color: $color-primary;
+      margin-bottom: 1rem;
+    }
+
+    .service-desc {
+      font-size: 0.95rem;
+      color: $color-text;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "atfr-construction",
+  "version": "1.0.0",
+  "description": "ATFR Construction Portfolio",
+  "scripts": {
+    "build:css": "/opt/homebrew/bin/sass src/scss/main.scss src/css/main.css",
+    "watch:css": "/opt/homebrew/bin/sass --watch src/scss:src/css"
+  }
+}
