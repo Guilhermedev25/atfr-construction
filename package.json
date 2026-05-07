@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "ATFR Construction Portfolio",
   "scripts": {
-    "build:css": "/opt/homebrew/bin/sass src/scss/main.scss src/css/main.css",
-    "watch:css": "/opt/homebrew/bin/sass --watch src/scss:src/css"
+    "build:css": "sass styles/main.scss styles/main.css",
+    "watch:css": "sass --watch styles/main.scss:styles/main.css"
   }
 }

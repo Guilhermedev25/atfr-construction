@@ -1,50 +1,34 @@
 # ATFR Construction Portfolio 🏗️
 
-> Olá! Meu nome é Guilherme, sou um desenvolvedor Front-End Júnior em busca da minha primeira oportunidade no mercado de tecnologia. Desenvolvi este projeto de ponta a ponta para colocar em prática meus estudos de HTML, CSS (Sass) e JavaScript. Espero que goste! 😄
+> This project is a high-end landing page built from the ground up to showcase modern web development practices using HTML, CSS (Sass), and JavaScript.
 
-![Preview do Projeto](./assets/images/hero.jpg)
-*(Dica: Se quiser, você pode tirar um print da tela do site rodando no seu navegador e substituir a imagem acima por um `screenshot.png`)*
+![Project Preview](./assets/images/hero.jpg)
+*(Tip: Replace this with a screenshot.png of the live site in your browser)*
 
-## 🚀 Sobre o Projeto
+## 🚀 About the Project
+ATFR Construction is a professional portfolio designed for a civil engineering and construction firm. The core philosophy of this project was to bypass heavy frameworks (like Bootstrap or Tailwind) in favor of a bespoke solution built with Vanilla JavaScript and Modular Sass (SCSS).
 
-O **ATFR Construction** é uma landing page e portfólio criado para uma empresa de construção civil. Meu principal objetivo com este projeto foi fugir de frameworks prontos (como Bootstrap ou Tailwind) e construir toda a estrutura do zero usando **Vanilla JavaScript** e **Sass (SCSS) Modular**. 
+The result is a lightweight, high-performance site with smooth transitions and a fully responsive layout tailored for any device.
 
-Foi um desafio incrível que serviu para provar a mim mesmo a minha capacidade de desenvolver layouts bonitos, totalmente responsivos e com um código fácil de dar manutenção.
+## 🛠️ Tech Stack & Architecture
+I focused on a "clean code" approach, prioritizing performance and maintainability:
 
-## 🛠️ Tecnologias e Arquitetura
+- **Semantic HTML5:** Structured for maximum accessibility (A11Y) and SEO optimization.
+- **Sass (SCSS) Architecture:** Implemented a modular folder structure (Base, Layout) to ensure the styles remain scalable and easy to navigate.
+- **Vanilla JavaScript:**
+  - **Custom Carousel:** A hand-coded slider logic for the services section.
+  - **Lightbox Gallery:** A custom-built modal system for viewing project photos.
+  - **Scroll Animations:** Used the `IntersectionObserver` API for high-performance reveal effects.
+- **Cross-Browser Optimization:** Specific fixes for Safari and iOS, including handling fixed background issues on mobile devices.
 
-Neste projeto, eu decidi focar nos fundamentos:
+## 💡 Technical Challenges & Solutions
+Developing this project provided deep insights into professional front-end workflows:
 
-- **HTML5 Semântico:** Estruturação pensada para acessibilidade e boas práticas.
-- **Sass (SCSS):** Arquitetura modular de estilos, dividindo o CSS por responsabilidades (Base, Layout, Variáveis) para manter o código limpo e escalável.
-- **JavaScript (Vanilla):** 
-  - Lógica pura sem depender de bibliotecas externas pesadas.
-  - Criação de um **Carrossel customizado** para os serviços.
-  - Desenvolvimento de um sistema de **Lightbox** do zero para a galeria de fotos.
-  - Animações fluidas de scroll usando a API nativa `IntersectionObserver`.
-- **Git & GitHub:** Versionamento de código e deploy contínuo via GitHub Pages.
-- **Otimização e SEO:** Configuração completa de Meta Tags, Open Graph (para prévias bonitas no WhatsApp/LinkedIn) e ajustes específicos para bugs do iOS/Safari.
+1. **DOM Manipulation:** Building UI components like the Lightbox and Slider from scratch deepened my understanding of how the browser handles events and styles without the abstraction of a library.
+2. **Scalable CSS:** Organizing styles by responsibility rather than having a single massive file taught me how to manage large-scale styling projects effectively.
+3. **The "iOS Fixed Background" Bug:** Solved the common issue where `background-attachment: fixed` fails on mobile Apple devices by using targeted `@supports (-webkit-touch-callout: none)` queries.
+4. **UI/UX Principles:** Focused on visual hierarchy, typography, and micro-interactions to create a premium feel that aligns with the construction industry's standards.
 
-## 💡 Meus maiores aprendizados
-
-Como um desenvolvedor júnior, cada projeto novo é um salto gigante de aprendizado. Aqui estão as coisas mais valiosas que extraí deste projeto:
-
-1. **Manipulação do DOM sem React/Vue:** Aprendi a valorizar e entender como o JavaScript puro funciona por debaixo dos panos. Criar a lógica do Lightbox e dos botões interativos me deu uma base muito mais forte.
-2. **Organização de Código:** Em vez de jogar todo o CSS em um arquivo de 1000 linhas, dividir os arquivos Sass me ensinou como projetos reais são mantidos em empresas.
-3. **Resolução de Bugs em Dispositivos Apple:** Enfrentei um problema onde o `background-attachment: fixed` quebrava o layout no iPad. Corri atrás, pesquisei e aprendi a usar a query `@supports (-webkit-touch-callout: none)` para fazer o ajuste fino.
-4. **Olho para o Design:** Entendi a importância do espaçamento, hierarquia de fontes e de micro-interações (como os efeitos de "hover") para passar uma sensação premium ao usuário final.
-
-## 🌐 Preview ao vivo
-
-Você pode conferir o resultado final hospedado no GitHub Pages:
-**[Acessar o Projeto (Substitua por seu link do Pages)](https://guilhermedev25.github.io/atfr-construction/)**
-
-## 📬 Contato
-
-Estou ativamente buscando minha primeira vaga! Se você gostou do meu código, tem algum feedback para me dar ou quer bater um papo, me chame:
-
-- **LinkedIn:** [Insira seu link aqui]
-- **Email:** [Insira seu email aqui]
-
----
-*Desenvolvido com muita dedicação por um júnior que ama tecnologia e não vê a hora de agregar valor em uma equipe! 💻✨*
+## 🌐 Live Preview
+You can check out the live version here:
+**[View Project Live](https://guilhermedev25.github.io/atfr-construction/)**
