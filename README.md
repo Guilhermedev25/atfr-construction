@@ -2,11 +2,11 @@
 
 > This project is a high-end landing page built from the ground up to showcase modern web development practices using HTML, CSS (Sass), and JavaScript.
 
-![Project Preview](./assets/images/hero.jpg)
-*(Tip: Replace this with a screenshot.png of the live site in your browser)*
+![Project Preview](./screenshot.png)
+
 
 ## 🚀 About the Project
-ATFR Construction is a professional portfolio designed for a civil engineering and construction firm. The core philosophy of this project was to bypass heavy frameworks (like Bootstrap or Tailwind) in favor of a bespoke solution built with Vanilla JavaScript and Modular Sass (SCSS).
+ATFR Construction is a professional portfolio designed for a civil engineering and construction firm.
 
 The result is a lightweight, high-performance site with smooth transitions and a fully responsive layout tailored for any device.
 
